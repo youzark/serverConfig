@@ -1,4 +1,5 @@
 if [ -d "~/.pyenv" ]; then
+	echo file exits
 else
 	mkdir ~/.pyenv
 fi
