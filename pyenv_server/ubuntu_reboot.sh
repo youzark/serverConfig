@@ -5,6 +5,6 @@ git clone https://github.com/alefpereira/pyenv-pyright.git $(pyenv root)/plugins
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
 pyenv virtualenv 3.9.9 nvim
-~/.pyenv/versions/nvim/bin/pip pynvim
+~/.pyenv/versions/nvim/bin/pip3 install pynvim
 
 exec "$SHELL"
