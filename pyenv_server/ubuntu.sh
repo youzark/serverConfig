@@ -1,3 +1,7 @@
+if [ -d "~/.pyenv" ]; then
+else
+	mkdir ~/.pyenv
+fi
 cd ~/.pyenv && src/configure && make -C src
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zprofile
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zprofile
