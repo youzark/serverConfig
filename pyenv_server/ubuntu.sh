@@ -13,4 +13,3 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
 echo 'eval "$(pyenv init --path)"' >> ~/.profile
 
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-pyenv install 3.9.9
