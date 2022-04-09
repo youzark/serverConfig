@@ -4,7 +4,6 @@ sudo apt-get --assume-yes install ninja-build gettext libtool libtool-bin autoco
 git clone https://github.com/neovim/neovim
 cd neovim && make
 cd ..
-sudo rm -rf neovim/
 sudo make install
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -17,4 +16,7 @@ fi
 
 curl -sL install-node.vercel.app/lts > installNodejs.sh
 chmod +x installNodejs.sh
-sudo ./installNodejs.sh
+sudo sh installNodejs.sh
+
+sudo rm -rf neovim/
+sudo rm installNodejs.sh
