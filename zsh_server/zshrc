@@ -105,28 +105,14 @@ SAVEHIST=1000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/youzark/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
-openPdfZathura() {
-	zathura $1 & disown
-}
 alias vim="nvim"
-alias pic="nomacs"
-alias video="mpv"
-alias pdf="openPdfZathura"
-alias torrent="aria2c"
-poetry completions zsh > ~/.zfunc/_poetry
 fpath+=~/.zfunc
 # alias tmux="TERM=screen-256color tmux"
 
 autoload -Uz compinit
 compinit
-
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(pyenv init -)"
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
