@@ -6,5 +6,6 @@ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
 pyenv virtualenv 3.9.9 nvim
 ~/.pyenv/versions/nvim/bin/pip3 install pynvim
+~/.pyenv/versions/nvim/bin/pip3 install ropevim
 
 exec "$SHELL"
