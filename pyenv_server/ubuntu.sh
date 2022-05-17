@@ -1,8 +1,8 @@
-if [ -d "~/.pyenv" ]; then
-	echo file exits
-else
-	mkdir ~/.pyenv
-fi
+# if [ -d "~/.pyenv" ]; then
+# 	echo file exits
+# else
+# 	mkdir ~/.pyenv
+# fi
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zprofile
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zprofile
